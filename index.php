@@ -13,7 +13,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 		<title><?php echo $pageName; ?></title>
-		<link rel="stylesheet" href="css/styleV3.css" />
+		<link rel="stylesheet" href="css/styleV4.css" />
 		<script src="struttura.js"></script>
 		<style>
 			.swal2-title

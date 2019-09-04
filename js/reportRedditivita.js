@@ -6,6 +6,7 @@
 
 	function callChart(chart,button)
 	{
+		console.log("we");
 		checkPin(button);
 		newCircleSpinner("Caricamento in corso...");
 		if(chart=="redditivitaArticoli")

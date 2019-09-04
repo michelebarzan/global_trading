@@ -4,19 +4,19 @@ function newCircleSpinner(message)
 	container.setAttribute("id","containerCircleSpinner");
 	
 	var middle=document.createElement("div");
-	middle.setAttribute("id","middle");
+	middle.setAttribute("id","middleCircleSpinner");
 	
 	var inner=document.createElement("div");
-	inner.setAttribute("id","inner");
+	inner.setAttribute("id","innerCircleSpinner");
 	
 	var spinWrapper=document.createElement("div");
-	spinWrapper.setAttribute("class","spin-wrapper");
+	spinWrapper.setAttribute("class","cirlceSpinner-spin-wrapper");
 	
 	var spinner=document.createElement("div");
-	spinner.setAttribute("class","spinner");
+	spinner.setAttribute("class","circleSpinner-spinner");
 	
 	var spinnerLabel=document.createElement("div");
-	spinnerLabel.setAttribute("class","spinnerLabel");
+	spinnerLabel.setAttribute("class","circleSpinner-spinnerLabel");
 	spinnerLabel.innerHTML=message;
 	
 	spinWrapper.appendChild(spinner);

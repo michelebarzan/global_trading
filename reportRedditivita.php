@@ -14,16 +14,15 @@
 		<link rel="stylesheet" href="fontawesomepro/css/fontawesomepro.css" />
 		<script src="js_libraries/canvasjs.min.js"></script>
 		<title><?php echo $pageName; ?></title>
-		<link rel="stylesheet" href="css/styleV3.css" />
+		<link rel="stylesheet" href="css/styleV4.css" />
 		<script src="struttura.js"></script>
 		<link rel="stylesheet" href="js_libraries/spinners/spinner.css" />
 		<script src="js_libraries/spinners/spinner.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 		<script src="js/reportRedditivita.js"></script>
-		<!--<script src="js_libraries/jscolor.js"></script>-->
-		<!--<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>-->
+		<link href="js_libraries/intro.js/introjs.css" rel="stylesheet">
+		<script type="text/javascript" src="js_libraries/intro.js/intro.js"></script>
 		<style>
 			.swal2-title
 			{
@@ -42,14 +41,11 @@
 			}
 		</style>
 	</head>
-	<!--<body onload="document.getElementById('containerCircleSpinner').style.display='none';">-->
-	<body onload="removeCircleSpinner()">
+	<body onload="removeCircleSpinner();">
 		<?php include('struttura.php'); ?>
-		<!--<div id="containerCircleSpinner" style="display:table"><div id="middle"><div id="inner"><div class="spin-wrapper"><div class="spinner"></div><div class="spinnerLabel">Caricamento in corso...</div></div></div></div></div>-->
 		<script>
 			newCircleSpinner("Caricamento in corso...");
 		</script>
-
 		<div id="container">
 			<div id="content">
 				<div class="logoContainer" >
