@@ -88,6 +88,9 @@
 				<div id="userSettingsRow2">
 					<button class="userSettingsImportaDati" onclick="importaDatiDialog()">Importa dati<i class="fal fa-download" style="margin-left:15px;"></i></button>
 				</div>
+				<!--<div id="userSettingsRow2">
+					<button class="userSettingsImportaDati intro-tutorial-location"  data-intro="Troverai qua il pulsante per avviare il tutorial" onclick="">Tutorial<i class="far fa-question" style="margin-left:15px;"></i></button>
+				</div>-->
 				<div id="permessiUserSettings">
 					<div id="userSettingsRow3">
 						Hai accesso alle pagine:

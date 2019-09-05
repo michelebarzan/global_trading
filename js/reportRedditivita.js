@@ -6,7 +6,6 @@
 
 	function callChart(chart,button)
 	{
-		console.log("we");
 		checkPin(button);
 		newCircleSpinner("Caricamento in corso...");
 		if(chart=="redditivitaArticoli")
@@ -135,6 +134,16 @@
 		for (var i = 0; i < all.length; i++) 
 		{
 			all[i].checked=false;
+		}
+	}
+	function checkTop(filter,n)
+	{
+		document.getElementById("absoluteActionBarFilterMenuFilterCheckboxAll"+filter).checked=false;
+		checkCheckboxes(filter);
+		var all = document.getElementsByClassName("absoluteActionBarFilterMenuCheckbox"+filter);
+		for (var i = 0; i < n; i++) 
+		{
+			all[i].checked=true;
 		}
 	}
 	function getChartRedditivitaArticoli()
@@ -1230,6 +1239,8 @@
 
 		if(grafico!="redditivitaArticoliTotale")
 		{
+			uncheckAll('CodiceArticolo');
+			checkTop('CodiceArticolo',10);
 			uncheckAll('CodiceRadice');
 			uncheckAll('CodiceMadre');
 		}
@@ -2646,3 +2657,34 @@
 				swal.close();
 		});
 	}
+	async function checkInto()
+    {
+		/*//da cancellare qunado oonline
+		setCookie("into1ReportRedditivita","false");
+		//-------------------------------------------------------
+		if(await getCookie("into1ReportRedditivita")!="true")
+		{
+			Swal.fire
+			({
+				type: 'question',
+				title: 'Tutorial',
+				text: "E' disponibile un tutorial delle funzionalità",
+				confirmButtonText: "Inizia tutorial",
+				showCancelButton:true,
+				cancelButtonText: "Salta tutorial"
+			}).then((result) => 
+			{
+				if (result.value)
+				{
+					//introJs().setOption('showProgress', true).oncomplete(function() {setCookie("into1GanttStatoOrdini","true")}).onexit(function() {setCookie("into1GanttStatoOrdini","true")}).start();
+				}
+				else
+				{
+					console.log("start");
+					introJs(".intro-tutorial-location").start();
+					//introJs(".intro-tutorial-location").start();
+					//setCookie("into1ReportRedditivita","true")
+				}					
+			});
+		}*/
+    }

@@ -41,7 +41,7 @@
 			}
 		</style>
 	</head>
-	<body onload="removeCircleSpinner();">
+	<body onload="removeCircleSpinner();checkInto()">
 		<?php include('struttura.php'); ?>
 		<script>
 			newCircleSpinner("Caricamento in corso...");
